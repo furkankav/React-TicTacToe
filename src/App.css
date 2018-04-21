@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #222;
+  height: 20px;
+  padding: 10px 0px 50px 0px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.rSide{
+  margin-top: 40px;
+  text-align: left;
+
+}
+
+.turn{
+  margin: 20px 0px 20px 0px;
+  color: red;
+  font-size: 2em;
+  
+}
+.winner{
+  margin: 20px 0px 20px 0px;
+  color: green;
+  font-size: 2em;
+  
+}
+
+.board { 
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  padding: 0px 0px 0px 0px;
+  display: flex; /*we have a square of 600 by 600 thx to this display we can fit all squares inside*/
+  background-color: rgb(206, 209, 167);
+  justify-content: flex-start;
+  flex-wrap: wrap; /* after a row ends because of width restrictions it adds another row*/
+  flex-direction: row;/* this has no affect because it is default anyways*/
+  
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  align-items: center; /* this allign them to center vertically */
+  justify-content: center;/* this allign them to center horizontally */
+  color: rgb(92, 165, 92);
+  font-size: 5em;
+  display: flex;
+  border: 3px solid black;
+  
+}
+
+.square:hover{
+  cursor: pointer;
+  background-color: rgb(45, 54, 177);
+}
